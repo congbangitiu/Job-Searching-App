@@ -1,0 +1,267 @@
+.wrapper {
+    width: 100%;
+    min-height: 500px;
+}
+
+.wrapper p {
+    margin: 5px 0;
+}
+
+.vacancy {
+    min-width: 300px;
+    max-width: 600px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    color: #334680;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.workingTime {
+    min-width: 80px;
+    height: 30px;
+    border: 1px solid #334680;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.workingTime p {
+    color: #334680;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+}
+.postingTime {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.postingTime p {
+    color: #b7bcce;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+}
+.company {
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    object-fit: contain;
+}
+.information {
+    margin-left: 15px;
+    width: 100%;
+}
+.name {
+    color: #334680;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+}
+.workingPlace {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.workingPlace p {
+    color: #b9bdcf;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.jobDescription {
+    height: 365px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+
+    color: #334680;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    overflow: hidden;
+}
+
+.jobDescription strong {
+    font-family: Roboto !important;
+    font-size: 20px !important;
+}
+
+.showing,
+.hiding {
+    display: flex;
+
+    &:hover .showText,
+    &:hover .hideText {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+.showing {
+    overflow: visible;
+    height: auto;
+    justify-content: end;
+}
+.hiding {
+    overflow: hidden;
+    justify-content: start;
+
+    & span {
+        margin-top: 20px;
+    }
+}
+.showText,
+.hideText {
+    padding: 5px;
+}
+.jobDescription p,
+.jobDescription strong,
+.jobDescription li {
+    color: #334680;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.jobDescription strong {
+    font-size: 18px;
+}
+
+.backToTopButton {
+    position: fixed;
+    bottom: 50px;
+    right: 70px;
+    background-color: #ddd8d8;
+    color: #fff;
+    padding: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.2s linear;
+    margin-bottom: 10px;
+}
+
+.backToTopButton:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltiptext {
+    width: 80px;
+    display: block;
+    text-align: center;
+}
+
+/* RESPONSIVE */
+//Tablet
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+}
+// Mobile
+@media (max-width: 46.1875em) {
+    .wrapper {
+        margin-left: 15%;
+    }
+    .vacancy {
+        margin-top: 10%;
+        max-width: 2000px;
+        font-size: 60px;
+    }
+    .workingTime {
+        width: 350px;
+        height: 100px;
+        border: 3px solid #334680;
+        border-radius: 20px;
+    }
+    .workingTime p {
+        font-size: 45px;
+        font-weight: 600;
+    }
+    .postingTime {
+        margin-top: 30px;
+        gap: 20px;
+    }
+    .postingTime svg {
+        width: 40px;
+        height: 40px;
+    }
+    .postingTime p {
+        font-size: 40px;
+    }
+    .company {
+        margin-top: 60px;
+    }
+    .logo {
+        width: 200px;
+        height: 200px;
+    }
+    .name {
+        font-size: 60px;
+    }
+    .workingPlace {
+        gap: 20px;
+    }
+    .workingPlace svg {
+        width: 40px;
+        height: 40px;
+    }
+    .workingPlace p {
+        font-size: 40px;
+    }
+    .jobDescription p {
+        font-size: 40px;
+    }
+    .jobDescription li {
+        font-size: 35px;
+    }
+    .jobDescription strong {
+        font-size: 40px !important;
+        margin: 0 !important;
+    }
+    .showText,
+    .hideText {
+        padding: 10px;
+        margin-top: 20px;
+        font-size: 50px;
+
+        &:active {
+            text-decoration: underline;
+        }
+    }
+    .backToTopButton svg{
+        width: 60px;
+        height: 60px;
+    }
+    .tooltip {
+        display: none;
+    }
+}

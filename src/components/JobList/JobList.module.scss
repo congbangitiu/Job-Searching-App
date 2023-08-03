@@ -1,0 +1,297 @@
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 500px;
+}
+
+.wrapper p {
+    margin: 5px 0;
+}
+
+.companies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.company {
+    width: 790px;
+    height: 114px;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+    margin: 10px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+
+    &:hover {
+        background-color: #f8f8f8;
+        transform: scale(1.03);
+    }
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 6px;
+    object-fit: contain;
+}
+.information {
+    width: 83%;
+    margin-left: 20px;
+}
+.name {
+    color: #334680;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 0 !important;
+}
+
+.vacancy {
+    color: #334680;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.workingTime {
+    width: 63px;
+    height: 26px;
+    border-radius: 4px;
+    border: 1px solid #334680;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.workingTime p {
+    color: #334680;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.moreDetails {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.workingPlace {
+    margin-right: 15px;
+}
+.postingTime {
+    margin-right: 5px;
+}
+
+.workingPlace,
+.postingTime {
+    display: flex;
+    align-items: center;
+}
+
+.workingPlace icon,
+.postingTime icon {
+    display: flex;
+    align-items: center;
+}
+
+.workingPlace p,
+.postingTime p {
+    color: #b9bdcf;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 5px;
+}
+
+.pagesContainer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.pages {
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    margin: 0 30px 0 30px;
+}
+
+.page {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    border: 1px solid #b7bcce;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background-color: #334680;
+        cursor: pointer;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+.page p {
+    color: #b9bdcf;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+}
+.active {
+    background-color: #334680;
+}
+.more {
+    border: none;
+}
+
+.backToTopButton {
+    position: fixed;
+    bottom: 50px;
+    right: 70px;
+    background-color: #ddd8d8;
+    color: #fff;
+    padding: 5px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.2s linear;
+    margin-bottom: 10px;
+}
+
+.backToTopButton:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltiptext {
+    width: 80px;
+    display: block;
+    text-align: center;
+}
+
+/* RESPONSIVE */
+//Tablet
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+}
+// Mobile
+@media (max-width: 46.1875em) {
+    .wrapper {
+        margin-top: 1000px;
+    }
+    .companies {
+        margin-left: 20%;
+    }
+    .company {
+        width: 1400px;
+        height: 350px;
+        border-radius: 20px;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+    .logo {
+        width: 200px;
+        height: 200px;
+    }
+    .information {
+        width: 70%;
+    }
+    .name {
+        font-size: 55px;
+    }
+    .vacancy {
+        font-size: 55px;
+    }
+    .details {
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 40px;
+    }
+    .workingTime {
+        width: 150px;
+        height: 50px;
+    }
+    .workingTime p {
+        font-size: 30px;
+    }
+    .moreDetails {
+        width: 80%;
+        gap: 20px;
+    }
+    .workingPlace p,
+    .postingTime p {
+        font-size: 35px;
+    }
+
+    .workingPlace svg,
+    .postingTime svg {
+        width: 35px;
+        height: 35px;
+    }
+    .pagesContainer {
+        width: 1400px;
+        display: flex;
+        justify-content: center;
+    }
+    .pages {
+        width: 60%;
+        margin: 0 50px 0 50px;
+    }
+    .page {
+        width: 60px;
+        height: 60px;
+    }
+    .page svg {
+        width: 50px;
+        height: 50px;
+    }
+    .page p {
+        font-size: 35px;
+    }
+    .backToTopButton svg{
+        width: 60px;
+        height: 60px;
+    }
+    .tooltip {
+        display: none;
+    }
+}
