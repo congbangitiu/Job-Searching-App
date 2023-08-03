@@ -87,10 +87,9 @@ function JobDetails({ company, job }) {
                     </div>
                 </div>
             </div>
-            <div
-                className={cx('jobDescription', { showing: isShowing }, { hiding: !isShowing })}
-                dangerouslySetInnerHTML={{ __html: convertToHtml(job.contents) }}
-            />
+            <div className={cx('jobDescription', { showing: isShowing }, { hiding: !isShowing })}>
+                <div dangerouslySetInnerHTML={{ __html: convertToHtml(job.contents) }} />
+            </div>
             {!isShowing && (
                 <p className={cx({ showing: !isShowing })} onClick={() => setIsShowing(true)}>
                     <span className={cx('showText')}>Show more</span>

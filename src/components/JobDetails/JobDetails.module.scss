@@ -193,14 +193,15 @@
     }
     .vacancy {
         margin-top: 10%;
-        max-width: 2000px;
-        font-size: 60px;
+        min-width: 1000px;
+        font-size: 50px;
     }
     .workingTime {
         width: 350px;
         height: 100px;
         border: 3px solid #334680;
         border-radius: 20px;
+        margin-left: 20px;
     }
     .workingTime p {
         font-size: 45px;
@@ -237,6 +238,9 @@
     .workingPlace p {
         font-size: 40px;
     }
+    .jobDescription {
+        width: 1150px;
+    }
     .jobDescription p {
         font-size: 40px;
     }
@@ -246,6 +250,9 @@
     .jobDescription strong {
         font-size: 40px !important;
         margin: 0 !important;
+    }
+    .showing {
+        // width: 1000px;
     }
     .showText,
     .hideText {
@@ -257,7 +264,7 @@
             text-decoration: underline;
         }
     }
-    .backToTopButton svg{
+    .backToTopButton svg {
         width: 60px;
         height: 60px;
     }
