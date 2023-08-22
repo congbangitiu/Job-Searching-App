@@ -115,11 +115,12 @@
 // Mobile
 @media (max-width: 640px) {
     .wrapper {
-        width: 350px;
+        width: 90%;
         height: 150px;
         display: flex;
         justify-content: center;
         border-radius: 15px;
+        margin-left: 0;
     }
 
     .search {

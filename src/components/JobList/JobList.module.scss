@@ -211,16 +211,17 @@ a {
 // Mobile
 @media (max-width: 640px) {
     .wrapper {
+        width: 90%;
         margin-top: -100px;
-    }
-    .companies {
-        width: 345px;
+        margin-right: 10% !important;
     }
     .company {
         width: 100%;
         height: 150px;
         border-radius: 10px;
         margin-bottom: 10px;
+        justify-content: center;
+        gap: 5%;
     }
     .logo {
         width: 75px;
