@@ -1,6 +1,6 @@
 .wrapper {
     width: 45%;
-    height: 500px;
+    height: 260px;
 }
 .backToSearch {
     width: 180px;
@@ -54,42 +54,39 @@
 
 /* RESPONSIVE */
 //Tablet
-@media (min-width: 46.25em) and (max-width: 63.9375em) {
+@media (min-width: 641px) and (max-width: 960px) {
 }
 // Mobile
-@media (max-width: 46.1875em) {
+@media (max-width: 640px) {
     .wrapper {
         width: 100%;
-        height: 500px;
-        margin-left: 15%;
+        margin-top: -40px;
     }
     .backToSearch {
-        width: 600px;
-        height: 120px;
-        border-radius: 20px;
+        width: 150px;
+        height: 40px;
+        border-radius: 10px;
 
         &:active {
             border-color: #1e86ff;
         }
     }
     .backToSearch svg {
-        width: 60px;
-        height: 60px;
+        width: 24px;
+        height: 24px;
     }
     .backToSearch p {
-        font-size: 70px;
+        font-size: 18px;
     }
     .applyingMethod {
-        width: 90%;
     }
     .applyingMethod p:first-child {
-        font-size: 60px;
+        font-size: 20px;
     }
     .applyingMethod p:last-child {
-        font-size: 50px;
+        font-size: 17px;
     }
-    
     .applyingMethod a {
-        font-size: 50px;
+        font-size: 17px;
     }
 }

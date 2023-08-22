@@ -82,13 +82,9 @@ function JobList({ companies, pageNumber, setPageNumber, totalPages, selectedCat
         <div className={cx('wrapper')}>
             <div className={cx('companies')}>
                 {displayedCompanies && displayedCompanies.length > 0 ? (
-                    displayedCompanies.map((company,index) => (
+                    displayedCompanies.map((company, index) => (
                         <Link className={cx('company')} key={company.id} to={`/jobs/${company.id}`}>
-                            <img
-                                className={cx('logo')}
-                                src={companyID?.[index]?.refs?.logo_image}
-                                alt="Company logo"
-                            />
+                            <img className={cx('logo')} src={companyID?.[index]?.refs?.logo_image} alt="Company logo" />
                             <div className={cx('information')}>
                                 <p className={cx('name')}>{companies?.[index]?.company?.name}</p>
                                 <p className={cx('vacancy')}>{companies?.[index]?.categories?.[0]?.name}</p>

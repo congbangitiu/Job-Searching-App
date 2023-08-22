@@ -3,7 +3,6 @@
     height: 138px;
     border-radius: 10px;
     background-image: url('https://png.pngtree.com/thumb_back/fw800/background/20190828/pngtree-design-background-of-person-working-on-his-computer-in-top-view-image_307725.jpg');
-    // background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,9 +82,8 @@
     border-radius: 8px;
     background: rgb(255, 255, 255);
     box-shadow: rgb(0 0 0 / 12%) 0px 2px 12px;
-
-    
 }
+
 .result {
     width: 800px;
     display: flex;
@@ -103,16 +101,6 @@
     &:last-child {
         margin-bottom: 10px;
     }
-
-    // &:hover:first-child {
-    //     border-top-left-radius: 8px;
-    //     border-top-right-radius: 8px;
-    // }
-
-    // &:hover:last-child {
-    //     border-bottom-left-radius: 8px;
-    //     border-bottom-right-radius: 8px;
-    // }
 }
 
 .magnifyingGlass {
@@ -120,61 +108,60 @@
     color: #b9bdcf;
 }
 
-
 /* RESPONSIVE */
 //Tablet
-@media (min-width: 46.25em) and (max-width: 63.9375em) {
-    
+@media (min-width: 641px) and (max-width: 960px) {
 }
 // Mobile
-@media (max-width: 46.1875em) {
+@media (max-width: 640px) {
     .wrapper {
-        width: 120%;
-        height: 400px; 
-        // margin-left: 2.5%;
+        width: 350px;
+        height: 150px;
         display: flex;
         justify-content: center;
-        border-radius: 20px;
+        border-radius: 15px;
     }
 
     .search {
-        width: 90%; 
-        height: 200px;
-        justify-content: center;
-        border-radius: 20px;
-        gap: 30px;
+        width: 90%;
+        height: 55px;
+        justify-content: space-between;
+        border-radius: 10px;
+        gap: 10px;
     }
-    .searchIcon svg{
-        width: 80px;
-        height: 80px;
+    .searchIcon svg {
+        width: 18px;
+        height: 18px;
     }
 
     .searchInput {
-        width: 70%; 
-        font-size: 50px;
+        width: 85%;
+        font-size: 15px;
     }
 
     .searchBtn {
+        width: 105px;
+        height: 45px;
+        border-radius: 6;
         display: none;
     }
 
     .results {
-        width: 1306px;
+        width: 350px;
         border-radius: 20px;
         max-height: 800px;
         overflow: scroll;
     }
     .result {
         width: 100%;
-        font-size: 50px;
-        gap: 20px;
-        margin-left: 20px;
+        font-size: 16px;
+        gap: 10px;
     }
     .magnifyingGlass {
-        font-size: 60px;
+        font-size: 15px;
     }
 
     .clear {
-        font-size: 40px;
+        font-size: 15px;
     }
 }

@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
 import {HomePage, JobDetailPage } from './pages';
 import './App.css';
 
