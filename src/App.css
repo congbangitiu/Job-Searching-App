@@ -50,7 +50,7 @@ p, strong {
         flex-direction: column;
     }
     .Inner {
-        width: 100%;
+        width: 90%;
         margin-left: 5%;
     }
     .Inner strong{
