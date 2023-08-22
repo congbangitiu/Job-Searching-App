@@ -264,17 +264,19 @@ a {
         height: 18px;
     }
     .pagesContainer {
-        width: 29%;
+        width: 100%;
         display: flex;
         justify-content: center;
+        margin-left: 5%;
+        background-color: red;
     }
     .pages {
-        width: 250px;
+        width: 80%;
         justify-content: space-between;
         margin: 0 20px 0 20px;
     }
     .page {
-        width: 22px;
+        width: 8%;
         height: 30px;
         border-radius: 5px;
     }
